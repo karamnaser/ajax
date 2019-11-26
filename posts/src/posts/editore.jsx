@@ -1,6 +1,6 @@
 import React from 'react'
 
-class PostAdder extends React.Component{
+class Editore extends React.Component{
 
         constructor(props){
 
@@ -30,6 +30,8 @@ class PostAdder extends React.Component{
             this.setState({liststatuse:!this.state.liststatuse})
 
         }
+
+
 
         render(){
 
@@ -62,7 +64,7 @@ class PostAdder extends React.Component{
                             </textarea>
                             
 
-                            <button  onClick={()=>this.props.addPost()}>
+                            <button  onClick={()=>this.props.updateserverdata(this.props.id,1)}>
 
 
                                     {this.props.btn_title}
@@ -99,4 +101,4 @@ class PostAdder extends React.Component{
         width: "auto"
 
      }
-    export default PostAdder ;
+    export default Editore ;

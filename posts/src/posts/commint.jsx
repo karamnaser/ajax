@@ -84,9 +84,20 @@ class Commint extends React.Component{
             
            <div style={{margin:"40px 0"}}> 
                 
-                <PostAdder addPost={this.addPost} btn_title="commint"/>
+               
 
                 < h4 onClick={()=>this.showpostbody(this.state.post_value)} > {`commint ${this.state.commints.length}`} </h4>
+
+                { this.state.activepost==this.state.post_value 
+                
+
+                        &&  
+                        
+                        
+                <PostAdder addPost={this.addPost} 
+                           btn_title="add commint"/>}
+
+
 
                 {this.state.commints!=null && this.state.commints.map((commint,i)=>{
                 

@@ -5,7 +5,7 @@ import Post from './posts/post'
 
 function App() {
     return ( 
-        <Post param={""} value={""}/>
+        <Post id=""/>
     );
 }
 
